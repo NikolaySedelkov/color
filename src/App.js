@@ -28,6 +28,9 @@ function App() {
       body.current.style.background = resultInput;
       colotTitleRef.current.style.color = `rgb(${255-result.r},${255-result.g},${255-result.b})`
       setTitleColor(resultInput);
+    }else{
+      setTitleColor("rgb(#404, #404, #404)");
+      body.current.style.background = "linear-gradient(red, yellow, blue, orange)";
     }
   }
   return (
